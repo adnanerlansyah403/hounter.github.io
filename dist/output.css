@@ -776,6 +776,12 @@ body {
   color: rgb(136 139 151 / var(--tw-text-opacity));
 }
 
+.btn-graySecondary {
+  border-radius: 32px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 227 235 / var(--tw-bg-opacity));
+}
+
 .button-form {
   display: flex;
   max-width: 496px;
@@ -1909,24 +1915,8 @@ body {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:-left-\[10\%\] {
-    left: -10%;
-  }
-
   .\32xl\:-left-\[25\%\] {
     left: -25%;
-  }
-
-  .\32xl\:-left-\[20\%\] {
-    left: -20%;
-  }
-
-  .\32xl\:-left-\[15\%\] {
-    left: -15%;
-  }
-
-  .\32xl\:-left-\[30\%\] {
-    left: -30%;
   }
 
   .\32xl\:flex {

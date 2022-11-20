@@ -28,6 +28,7 @@ module.exports = {
         pureWhite: '#FFFFFF',
         blackPrimary: '#0E1735',
         blackSecondary: '#3C4563',
+        grayPure: "#E0E3EB",
         grayPrimary: '#1B1C57',
         graySecondary: '#626687',
         grayNeutral: '#888B97',

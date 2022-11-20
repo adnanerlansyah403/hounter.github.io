@@ -369,6 +369,10 @@
         @apply border border-[#E0E3EB] rounded-[32px] bg-white;
     }
 
+    .btn-grayPure {
+        @apply bg-grayPure rounded-[32px]
+    }
+
     .btn-grayPrimary {
         @apply text-grayNeutral bg-white border border-[#E0E3EB] rounded-[32px]
     }
