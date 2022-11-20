@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Hunter - Web Design</title>
+
+    <!-- Output TailwindCSS -->
+    <link href="./dist/output.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Ion Icons -->
+    
+
+</head>
+<body>
+
+    <!-- Background Gradient -->
+    <div class="green-gradient">
+        <span class="vector-1"></span>
+        <span class="hidden lg:block vector-2"></span>
+    </div>
+    
+    <div class="hidden lg:block orange-gradient">
+        <span class="vector-1"></span>
+        <span class="vector-2"></span>
+    </div>
+    
+    <div class="hidden lg:block green-secondary-gradient">
+        <span class="vector-1"></span>
+        <span class="vector-2"></span>
+    </div>
+    
+    <div class="footer-gradient">
+        <span class="vector-1"></span>
+        <span class="vector-2"></span>
+    </div>
+
+    <header class="relative" id="home">
+
+        <div class="col-12 mx-auto">
+
+            <div class="btn bg-whiteTransparent lg:bg-transparent w-[100%] fixed lg:absolute flex items-center justify-between lg:top-10 py-4 lg:py-0 px-[1rem] lg:px-[60px]" style="z-index: 50;">
+                <a href="#">
+                    <img src="./src/images/hounterlogo.png" width="115" height="36" alt="">
+                </a>
+                
+                <nav class="navbar lg:navbar-desktop overflow-hidden" data-navbar>
+                    <ul class="nav-list flex items-center gap-6">
+                        <li>
+                            <a href="#" class="btn-md btn-grayPrimary rounded-0 md:rounded-full hover:btn-greenPrimary lg:btn-whiteTransparent">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-md btn-grayPrimary rounded-0 md:rounded-full hover:btn-greenPrimary lg:btn-whiteTransparent">
+                                Article
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-md btn-grayPrimary rounded-0 md:rounded-full hover:btn-greenPrimary lg:btn-whiteTransparent">
+                                Property
+                                <img src="./src/images/icons/white-arrow-bottom.svg" class="img-filter-gray lg:img-filter-white" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-signUp btn btn-greenSecondary">
+                        Sign Up
+                    </a>
+                </nav>
+
+                <button class="btn btn-toggle" data-nav-toggle>
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+    
+    <main class="overflow-x-hidden">
+        <article>
+
+            <!-- HERO -->
+
+            <div id="heroWrapper flex items-center relative">
+                <section id="hero" class="section" aria-label="hero">
+                    <div class="container">
+    
+                        <div class="content pt-[96px] left-effect">
+    
+                            <h1 class="hero-title w-full lg:col-3">
+                                find the place to
+                                live <span class="text-transparent text-white-border">your dreams</span>
+                                easily here
+                            </h1>
+                            <p class="w-full lg:col-4 pt-6 text-graySecondary font-normal">Everything you need about finding your place to live will be here, where it will be easier for you</p>
+    
+                            <form action="" class="py-[32px]">
+                                <div class="button-form">
+                                    <figure class="hidden md:block">
+                                        <img src="./src/images/icons/maps-orange-icon.svg" alt="">
+                                    </figure>
+                                    <input type="text" placeholder="Search for the location you want!" class="w-full md:w-auto flex-1">
+                                    <button type="submit" class="flex items-center gap-0 lg:gap-1 btn btn-greenPrimary">
+                                        <span>Search</span>
+                                        <img src="./src/images/icons/white-arrow-right.svg" class="hidden md:block" alt="">
+                                    </button>
+                                </div>
+                            </form>
+    
+                            <p class="text-grayNeutral">Our Partnership</p>
+                            <ul class="companies flex flex-wrap lg:flex-nowrap items-center gap-4 lg:gap-8">
+                                <li>
+                                    <img src="./src/images/traveloka-logo.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./src/images/tiket-logo.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./src/images/airbnb-logo.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./src/images/trip-logo.png" alt="">
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                </section>
+                <div class="hidden lg:block rightHero-wrapper w-1/2 absolute top-0 right-0 h-full rounded-bl-[32px] object-cover" style="background-image: url('./src/images/hero-bg.png'); background-repeat: no-repeat; background-size: cover;">
+                    <!-- <img src="./src/images/hero-bg.png" alt="" class="absolute top-0 right-0 rounded-bl-[32px] w-full object-cover"> -->
+                    <div class="card-wrapper hidden 2xl:flex items-center gap-10 absolute bottom-[32px] left-12">
+
+                        <div class="card-item-md flex items-start gap-4">
+                            <div class="card-summary flex self-center justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">        
+                                <img src="./src/images/featured-user-1.png" class="object-cover rounded-full bg-slate-100 ring-2 ring-white" loading="lazy">
+                                <img src="./src/images/featured-user-2.png" class="object-cover rounded-full bg-slate-100 ring-2 ring-white" loading="lazy">
+                                <img src="./src/images/featured-user-3.png" class="object-cover rounded-full bg-slate-100 ring-2 ring-white" loading="lazy">
+                            </div>
+                            <div class="card-details pt-[2px]">
+                                <h3 class="card-title-md">1K+ People</h3>
+                                <p class="card-subtitle-sm">Successfully Getting Home</p>
+                            </div>
+                        </div>
+
+                        <div class="card-item-md flex items-start gap-4">
+                            <div class="card-summary flex self-center justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-1.5">        
+                                <img src="./src/images/home-lg-1.png" class="w-[56px] h-[56px] object-cover rounded-full bg-slate-100" loading="lazy">
+                            </div>
+                            <div class="card-details pt-[2px]">
+                                <h3 class="card-title-md">56 Houses</h3>
+                                <p class="card-subtitle-sm">Sold Monthly</p>
+                            </div>
+                        </div>
+
+                        <div class="card-item-md flex items-start gap-4">
+                            <div class="card-summary flex self-center justify-end sm:justify-start lg:justify-end xl:justify-start">        
+                                <img src="./src/images/featured-user-1.png" class="object-cover rounded-full bg-slate-100" loading="lazy">
+                            </div>
+                            <div class="card-details pt-[2px]">
+                                <h3 class="card-title-md">4k</h3>
+                                <p class="card-subtitle-sm">Sold Monthly</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED HOUSE -->
+
+            <section id="featuredHouse" class="section">
+                <div class="container" style="max-width: inherit;">
+
+                    <h4 class="section-subtitle left-effect">Our Recommendation</h4>
+
+                    <div class="section-header flex items-center flex-wrap gap-4 justify-between pb-[52px] top-effect">
+                        <h1 class="section-title">Featured House</h1>
+                        <ul class="flex items-center gap-8">
+                            <li>
+                                <button class="bg-none flex items-center gap-1 md:btn md:btn-greenSecondary font-semibold">
+                                    <img src="./src/images/icons/green-house-icon.svg" alt="">
+                                    <span>House</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="bg-none flex items-center gap-1 md:btn md:btn-whitePrimary font-semibold">
+                                    <img src="./src/images/icons/gray-villa-icon.svg" alt="">
+                                    <span>Villa</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="bg-none flex items-center gap-1 md:btn md:btn-whitePrimary font-semibold">
+                                    <img src="./src/images/icons/gray-apartment-icon.svg" alt="">
+                                    <span>Apartment</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="navigation hidden lg:flex items-center gap-4">
+                            <button class="btn btn-grayPrimary rounded-full">
+                                <img src="./src/images/icons/arrow-left-gray.svg" alt="">
+                            </button>
+                            <button class="btn btn-greenPrimary rounded-full">
+                                <img src="./src/images/icons/white-arrow-right.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-transparent-wrapper w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ml-60px right-effect">
+
+                        <div class="card-item">
+                            <div class="card-header relative h-max">
+                                <figure>
+                                    <img src="./src/images/featured-img-home-1.png" class="w-full md:w-auto rounded-lg" alt="">
+                                </figure>
+                                <span class="badge badge-danger absolute bottom-[16px] left-[16px]">Popular</span>
+                            </div>
+                            <div class="card-details pt-6">
+                                <h3 class="font-medium xl3">Roselands House</h3>
+                                <p class="font-medium xl2 pb-6 pt-2 text-[#3C4563]">$ 35.000.000</p>
+                                <div class="user flex items-center gap-4">
+                                    <img src="./src/images/featured-user-1.png" alt="">
+                                    <div class="space-y-1">
+                                        <h4 class="font-medium text-xl">Dianne Russel</h4>
+                                        <p class="grayNeutral text-gray-sm">Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header relative h-max">
+                                <figure>
+                                    <img src="./src/images/featured-img-home-2.png" class="w-full md:w-auto rounded-lg" alt="">
+                                </figure>
+                                <span class="badge badge-info absolute bottom-[16px] left-[16px]">New House</span>
+                            </div>
+                            <div class="card-details pt-6">
+                                <h3 class="font-medium xl3">Woodlandside</h3>
+                                <p class="font-medium xl2 pb-6 pt-2 text-[#3C4563]">$ 20.000.000</p>
+                                <div class="user flex items-center gap-4">
+                                    <img src="./src/images/featured-user-2.png" alt="">
+                                    <div class="space-y-1">
+                                        <h4 class="font-medium text-xl">Robert Fox</h4>
+                                        <p class="grayNeutral text-gray-sm">Dr. San Jose, South Dakota</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header relative h-max">
+                                <figure>
+                                    <img src="./src/images/featured-img-home-3.png" class="w-full md:w-auto rounded-lg" alt="">
+                                </figure>
+                                <span class="badge badge-success absolute bottom-[16px] left-[16px]">Best Sells</span>
+                            </div>
+                            <div class="card-details pt-6">
+                                <h3 class="font-medium xl3">The Old Lighthouse</h3>
+                                <p class="font-medium xl2 pb-6 pt-2 text-[#3C4563]">$ 44.000.000</p>
+                                <div class="user flex items-center gap-4">
+                                    <img src="./src/images/featured-user-3.png" alt="">
+                                    <div class="space-y-1">
+                                        <h4 class="font-medium text-xl">Ronald Richards</h4>
+                                        <p class="grayNeutral text-gray-sm">Santa Ana, Illinois</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header relative h-max">
+                                <figure>
+                                    <img src="./src/images/featured-img-home-3.png" class="w-full md:w-auto rounded-lg" alt="">
+                                </figure>
+                                <span class="badge badge-danger absolute bottom-[16px] left-[16px]">Popular</span>
+                            </div>
+                            <div class="card-details pt-6">
+                                <h3 class="font-medium xl3">Cosmo's House</h3>
+                                <p class="font-medium xl2 pb-6 pt-2 text-[#3C4563]">$ 22.000.000</p>
+                                <div class="user flex items-center gap-4">
+                                    <img src="./src/images/featured-user-4.png" alt="">
+                                    <div class="space-y-1">
+                                        <h4 class="font-medium text-xl">Jenny Wilson</h4>
+                                        <p class="grayNeutral text-gray-sm">Preston Rd. Inglewood, Maine 98380</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Tour -->
+
+            <section id="tourHouse" class="section">
+                <div class="container" style="max-width: inherit;">
+
+                    <div class="content flex flex-col gap-8 lg:flex-row lg:gap-0 items-start">
+                        <div class="left col-11 lg:w-full">
+                            <h4 class="section-subtitle">Ready to Sell</h4>
+                            <h1 class="section-title pt-2">Let’s tour and see our house!</h1>
+                            <p class="text-graySecondary font-normal py-4 lg:col-9">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                            <div class="details">
+                                <h5 class="font-bold text-[16px] text-[#1B1C57]">House Details</h5>
+                                <ul class="pt-4 flex flex-wrap items-center lg:grid lg:grid-cols-2 lg:col-6 gap-4">
+                                    <li class="flex items-center gap-2 lg:gap-4">
+                                        <img src="./src/images/icons/bed-gray-icon.svg" alt="">
+                                        <span>4 Bedrooms</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 lg:gap-4">
+                                        <img src="./src/images/icons/bath-gray-icon.svg" alt="">
+                                        <span>4 Bathest</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 lg:gap-4">
+                                        <img src="./src/images/icons/carport-gray-icon.svg" alt="">
+                                        <span>1 Carport</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 lg:gap-4">
+                                        <img src="./src/images/icons/floors-gray-icon.svg" alt="">
+                                        <span>4 Floors</span>
+                                    </li>
+                                </ul>
+                                <div class="contact flex items-center gap-8 lg:gap-[56px] mt-8 pt-8 border-t border-[#F0F3FD] w-max">
+                                    <div class="user-info flex items-center gap-6">
+                                        <img src="./src/images/featured-user-1.png" class="hidden md:block" alt="">
+                                        <div class="space-y-1">
+                                            <h4 class="font-medium text-xl">Dianne Russel</h4>
+                                            <p class="grayNeutral text-gray-sm">Manager Director</p>
+                                        </div>
+                                    </div>
+                                    <button class="contact-button btn btn-greenPrimary">
+                                        <img src="./src/images/icons/telp-gray-icon.svg" class="hidden lg:block" alt="">
+                                        <span>Contact Now</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right w-full lg:max-w-[528px] relative">
+                            <div class="images">
+                                <img src="./src/images/video-home-review.png" class="w-full lg:w-[488px]" alt="">
+                                <div class="image-group hidden lg:flex items-end gap-3 absolute -bottom-[25px] -left-[75px]" style="align-items: flex-end;">
+                                    <img src="./src/images/home-review-md.png" alt="">
+                                    <img src="./src/images/home-review-sm-1.png" alt="">
+                                    <img src="./src/images/home-review-sm-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Reviews -->
+
+            <section id="reviewHouse" class="section">
+                <div class="container  relative" style="max-width: inherit;">
+
+                    <div class="section-text-wrapper text-center top-effect">
+
+                        <h4 class="section-subtitle lt flex items-center justify-center">See our Review</h4>
+                        <h1 class="section-title pt-3">What Our User Say About Us</h1>
+
+                    </div>
+
+                    <div class="content pt-10">
+                        <div class="card-wrapper flex items-center gap-14 lg:absolute w-full lg:-left-[40%] 2xl:-left-[25%]">
+
+                            <div class="card-item lg:relative min-w-full lg:min-w-max">
+                                <div class="card-img">
+                                    <figure>
+                                        <img src="./src/images/home-review-lg-1.png" alt="" class="w-full lg:max-w-max">
+                                    </figure>
+                                </div>
+                                <div class="card-bg p-8 md:-translate-y-[72px] rounded-lg bg-white shadow-md max-w-[612px] mx-auto">
+                                    <h2 class="card-title-lg">Best! I got the house I wanted through Hounter</h2>
+                                    <p class="card-subtitle-md pt-4 pb-6">
+                                        Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.
+                                    </p>
+                                    <div class="contact w-full flex items-end justify-between gap-8 lg:gap-[56px]">
+                                        <div class="user-info flex items-center gap-6 w-full">
+                                            <img src="./src/images/featured-user-1.png" class="" alt="">
+                                            <div class="space-y-1">
+                                                <h4 class="font-medium text-xl">Dianne Russel</h4>
+                                                <p class="grayNeutral text-gray-sm">Manager Director</p>
+                                            </div>
+                                            <div class="flex flex-1 items-end justify-end">
+                                                <img src="./src/images/icons/star-orange-icon.svg" alt="">
+                                                &nbsp; 4.8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-item lg:relative min-w-full lg:min-w-max">
+                                <div class="card-img">
+                                    <figure>
+                                        <img src="./src/images/home-review-lg-1.png" alt="" class="w-full lg:max-w-max">
+                                    </figure>
+                                </div>
+                                <div class="card-bg p-8 md:-translate-y-[72px] rounded-lg bg-white shadow-md max-w-[612px] mx-auto">
+                                    <h2 class="card-title-lg">Best! I got the house I wanted through Hounter</h2>
+                                    <p class="card-subtitle-md pt-4 pb-6">
+                                        Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.
+                                    </p>
+                                    <div class="contact w-full flex items-end justify-between gap-8 lg:gap-[56px]">
+                                        <div class="user-info flex items-center gap-6 w-full">
+                                            <img src="./src/images/featured-user-1.png" class="" alt="">
+                                            <div class="space-y-1">
+                                                <h4 class="font-medium text-xl">Dianne Russel</h4>
+                                                <p class="grayNeutral text-gray-sm">Manager Director</p>
+                                            </div>
+                                            <div class="flex flex-1 items-end justify-end">
+                                                <img src="./src/images/icons/star-orange-icon.svg" alt="">
+                                                &nbsp; 4.8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-item lg:relative min-w-full lg:min-w-max">
+                                <div class="card-img">
+                                    <figure>
+                                        <img src="./src/images/home-review-lg-1.png" alt="" class="w-full lg:max-w-max">
+                                    </figure>
+                                </div>
+                                <div class="card-bg p-8 md:-translate-y-[72px] rounded-lg bg-white shadow-md max-w-[612px] mx-auto">
+                                    <h2 class="card-title-lg">Best! I got the house I wanted through Hounter</h2>
+                                    <p class="card-subtitle-md pt-4 pb-6">
+                                        Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.
+                                    </p>
+                                    <div class="contact w-full flex items-end justify-between gap-8 lg:gap-[56px]">
+                                        <div class="user-info flex items-center gap-6 w-full">
+                                            <img src="./src/images/featured-user-1.png" class="" alt="">
+                                            <div class="space-y-1">
+                                                <h4 class="font-medium text-xl">Dianne Russel</h4>
+                                                <p class="grayNeutral text-gray-sm">Manager Director</p>
+                                            </div>
+                                            <div class="flex flex-1 items-end justify-end">
+                                                <img src="./src/images/icons/star-orange-icon.svg" alt="">
+                                                &nbsp; 4.8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- NEWSLETTER -->
+
+            <section id="newsletter" class="section">
+                <div class="container" style="max-width: inherit;">
+
+                    <div class="bg-wrapper relative rounded-lg block mx-auto col-12 max-w-[1200px] h-[312px] px-4 py-6 bottom-effect" style="background-image: url(./src/images/background-blue-gradient.png); background-repeat: no-repeat;">
+
+                        <figure class="hidden lg:block absolute top-8 left-[44px]">
+                            <img src="./src/images/chair.png" width="81" height="81" class="rounded-lg" alt="">
+                        </figure>
+                        <figure class="hidden lg:block absolute bottom-[103px] left-[67px]">
+                            <img src="./src/images/featured-user-1.png" width="36" height="36" class="rounded-full" alt="">
+                        </figure>
+                        <figure class="hidden lg:block absolute top-[71px] left-[201px]">
+                            <img src="./src/images/featured-user-2.png" width="36" height="36" class="rounded-lg" alt="">
+                        </figure>
+                        <figure class="hidden lg:block absolute top-[44px] right-[200px]">
+                            <img src="./src/images/house.png" width="70" height="70" class="rounded-lg" alt="">
+                        </figure>
+                        <figure class="hidden lg:block absolute bottom-[60px] right-[73px]">
+                            <img src="./src/images/chair.png" width="81" height="81" class="rounded-lg" alt="">
+                        </figure>
+                        <figure class="hidden lg:block absolute top-8 left-[44px]">
+                            <img src="./src/images/chair.png" width="55" height="55" class="rounded-lg" alt="">
+                        </figure>
+
+                        <div class="content flex flex-col items-center justify-center h-full">
+                            
+                            <h1 class="section-title lg:col-48 text-center">
+                                Subscribe For More Info
+                                and update from Hounter
+                            </h1>
+
+                            <form class="button-newsletter mt-12">
+                                <img src="./src/images/icons/email-blue-icon.svg" class="hidden md:block" alt="">
+                                <input type="text" placeholder="Your email here...">
+                                <button type="submit" class="btn btn-greenPrimary">Subcribe</button>
+                            </form>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="pt-[120px] pb-[120px]">
+        <div class="container flex flex-wrap lg:flex-nowrap items-start gap-10" style="max-width: inherit;">
+
+            <div class="footer-brand">
+                <figure>
+                    <img src="./src/images/hounterlogo.png" alt="">
+                </figure>
+                <p class="pt-4 pb-6 col-11 lg:col-9">
+                    We provide information about properties such as houses, villas and apartments to help people find their dream home
+                </p>
+                <ul class="socials flex items-center gap-6">
+                    <li>
+                        <a href="#">
+                            <img src="./src/images/icons/facebook-gray-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./src/images/icons/twitter-gray-icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./src/images/icons/instagram-gray-icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list w-full flex flex-col md:flex-row items-start justify-between lg:justify-evenly gap-8">
+                <ul class="footer-links flex flex-col gap-[18px]">
+                    <li class="footer-title mb-6">
+                        <span>Property</span>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            House
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            Apartment
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            Villa
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-links flex flex-col gap-[18px]">
+                    <li class="footer-title mb-6">
+                        <span>Article</span>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            New Article
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            Popular Article
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            Most Read
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#" class="text-grayNeutral">
+                            Tips & Tricks
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-links flex flex-col gap-[18px]">
+                    <li class="footer-title mb-6">
+                        <span>Contact</span>
+                    </li>
+                    <li class="footer-link">
+                        <p class="text-grayNeutral">
+                            2464 Royal Ln. Mesa, New Jersey 45463
+                        </p>
+                    </li>
+                    <li class="footer-link">
+                        <p class="text-grayNeutral">
+                            (671) 555-0110
+                        </p>
+                    </li>
+                    <li class="footer-link">
+                        <p class="text-grayNeutral">
+                            info@hounter.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- BUTTON UP -->
+
+    <a href="#home" class="fixed bottom-8 right-4 bg-white border-[5px] border-grayPrimary rounded-full w-8 h-8 leading-8 text-center font-bold text-graySecondary hover:bg-greenPrimary hover:text-white transition duration-300 ease-in-out" data-button-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- SCRIPTS -->
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        const navbar = document.querySelector('[data-navbar]');
+        const navBtnToggle = document.querySelector('[data-nav-toggle]');
+        const buttonTop = document.querySelector('[data-button-top]');
+
+        navBtnToggle.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        })
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY < 200) {
+                buttonTop.classList.add('hidden');
+            } else {
+                buttonTop.classList.remove('hidden');
+            }
+        })
+
+    </script>
+
+</body>
+</html>
