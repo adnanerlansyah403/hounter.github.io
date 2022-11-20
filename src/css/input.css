@@ -206,7 +206,7 @@
     }
     
     .section-subtitle.lt {
-        @apply sm:before:absolute sm:before:block sm:before:w-[32px] sm:before:h-[1px] sm:before:bg-[#F59E0B] before:-top-[15px] before:left-[49%];
+        @apply sm:before:absolute sm:before:block sm:before:w-[32px] sm:before:h-[1px] sm:before:bg-[#F59E0B] before:-top-[15px] before:left-[48.5%];
     }
 
     .text-gray-sm {
@@ -283,7 +283,7 @@
         position: absolute;
         width: 438px;
         height: 494px;
-        left: -100px;
+        /* left: -100px; */
         top: 2930px;
         background: #82FFE8;
         opacity: 0.3;
@@ -293,10 +293,14 @@
     
     /* Background Orange Gradient */
 
+    .orange-gradient {
+        position: relative;
+    }
+
     .orange-gradient .vector-1 {
         position: absolute;
-        left: 1593px;
-        top: 1574px;
+        right: 0;
+        top: -200px;
         width: 438px;
         height: 494px;
         background: #FFFA82;
@@ -309,8 +313,8 @@
         position: absolute;
         width: 438px;
         height: 494px;
-        right: -200px;
-        top: 1552px;
+        right: 100px;
+        top: -230px;
         background: #FF9882;
         opacity: 0.3;
         filter: blur(60px);
@@ -323,7 +327,7 @@
         width: 438px;
         height: 494px;
         right: -100px;
-        bottom: 0;
+        bottom: -100px;
 
         background: #82BBFF;
         opacity: 0.3;
@@ -335,8 +339,8 @@
         position: absolute;
         width: 438px;
         height: 494px;
-        right: 294px;
-        bottom: 4268px;
+        right: 150px;
+        bottom: -100px;
 
         background: #B9FF82;
         opacity: 0.3;
@@ -415,6 +419,26 @@
     }
 
     /* CARD */
+    
+    .card-wrapper {
+        @apply pb-[36px];
+        scroll-snap-type: mandatory;
+    }
+
+    .card-wrapper::-webkit-scrollbar { 
+        @apply lg:hidden h-3;
+        scroll-behavior: smooth; 
+    }
+
+    .card-wrapper::-webkit-scrollbar-track {
+        @apply border border-grayNeutral rounded-[1.5rem];
+    }
+
+    .card-wrapper::-webkit-scrollbar-thumb {
+        @apply bg-greenPrimary rounded-[1.5rem];
+    }
+
+    .card-wrapper::-webkit-scrollbar-button { width: calc(50% - 20px); }
 
     .card-item-lg {
         @apply flex items-center p-8 gap-4 max-w-[612px] bg-white rounded-[16px]

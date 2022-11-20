@@ -29,17 +29,7 @@
         <span class="hidden lg:block vector-2"></span>
     </div>
     
-    <div class="hidden lg:block orange-gradient">
-        <span class="vector-1"></span>
-        <span class="vector-2"></span>
-    </div>
-    
     <div class="hidden lg:block green-secondary-gradient">
-        <span class="vector-1"></span>
-        <span class="vector-2"></span>
-    </div>
-    
-    <div class="footer-gradient">
         <span class="vector-1"></span>
         <span class="vector-2"></span>
     </div>
@@ -317,7 +307,13 @@
 
             <!-- Tour -->
 
-            <section id="tourHouse" class="section">
+            <section id="tourHouse" class="section relative">
+    
+                <div class="hidden lg:block orange-gradient">
+                    <span class="vector-1"></span>
+                    <span class="vector-2"></span>
+                </div>
+
                 <div class="container" style="max-width: inherit;">
 
                     <div class="content flex flex-col gap-8 lg:flex-row lg:gap-0 items-start">
@@ -388,7 +384,7 @@
                     </div>
 
                     <div class="content pt-10">
-                        <div class="card-wrapper flex items-center gap-14 lg:absolute w-full lg:-left-[40%] 2xl:-left-[25%]">
+                        <div class="card-wrapper flex items-center gap-14 lg:absolute w-auto lg:-left-[25%]" style="overflow-x: auto;">
 
                             <div class="card-item lg:relative min-w-full lg:min-w-max">
                                 <div class="card-img">
@@ -396,7 +392,7 @@
                                         <img src="./src/images/home-review-lg-1.png" alt="" class="w-full lg:max-w-max">
                                     </figure>
                                 </div>
-                                <div class="card-bg p-8 md:-translate-y-[72px] rounded-lg bg-white shadow-md max-w-[612px] mx-auto">
+                                <div class="card-bg p-8 sm:-translate-y-[72px] rounded-lg bg-white shadow-md max-w-[612px] mx-auto">
                                     <h2 class="card-title-lg">Best! I got the house I wanted through Hounter</h2>
                                     <p class="card-subtitle-md pt-4 pb-6">
                                         Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.
@@ -524,7 +520,13 @@
         </article>
     </main>
 
-    <footer class="pt-[120px] pb-[120px]">
+    <footer class="pt-[120px] pb-[120px] relative overflow-hidden">
+    
+        <div class="hidden lg:block footer-gradient">
+            <span class="vector-1"></span>
+            <span class="vector-2"></span>
+        </div>
+
         <div class="container flex flex-wrap lg:flex-nowrap items-start gap-10" style="max-width: inherit;">
 
             <div class="footer-brand">
